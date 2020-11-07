@@ -1,11 +1,12 @@
-package app.kitos.appminhaideia;
+package app.kitos.appminhaideia.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
+
+import app.kitos.appminhaideia.R;
 
 public class SplashActivity extends AppCompatActivity {
 
