@@ -10,17 +10,11 @@ import app.kitos.appminhaideia.model.Cliente;
 
 public class MainActivity extends AppCompatActivity {
 
-    Cliente objCliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        objCliente = new Cliente("Marcus",
-                "marcuslcnog@gmail.com",
-                "99580365",
-                25,
-                false);
     }
 }
