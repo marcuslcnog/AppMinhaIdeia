@@ -5,20 +5,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
 
 import app.kitos.appminhaideia.R;
+import app.kitos.appminhaideia.controller.ClienteController;
+import app.kitos.appminhaideia.core.AppUtil;
 import app.kitos.appminhaideia.model.Cliente;
 
 public class SplashActivity extends AppCompatActivity {
 
     int tempoDeEspera = 1000 * 2;
 
+    TextView txtAppVersion;
+
     Cliente objCliente;
+    ClienteController clienteController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        txtAppVersion = findViewById(R.id.txtAppVersion);
+        txtAppVersion.setText(AppUtil.versaoDoApp());
+
+        clienteController = new ClienteController();
 
         trocarTela();
     }
